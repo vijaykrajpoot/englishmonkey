@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.vkrajput.englishmonkey</groupId>
+	<artifactId>english-monkey-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>english-monkey-pparent</name>
+	<description>tenglish-monkey--parent-module</description>
+	<url>https://github.com/vijaykrajpoot/learning</url>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+	</parent>
+
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>Yet to be decided</comments>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>Vijay</id>
+			<name>Vijay Kumar Rajut</name>
+			<email>vijaykrajpoot@gmail.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.9</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<!--plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>exec-maven-plugin</artifactId> <version>1.6.0</version> <configuration> <executable>maven</executable> </configuration> </plugin> 
+			<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> <version>${maven.surefire.version}</version> <configuration> <forkCount>3</forkCount> <reuseForks>true</reuseForks> 
+			<excludes> <exclude>**/*IntegrationTest.java</exclude> </excludes> <testFailureIgnore>true</testFailureIgnore> </configuration> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+			<version>${maven.compiler.version}</version> <configuration> <source>1.8</source> <target>1.8</target> </configuration> </plugin> </plugins -->
+	</build>
+
+</project>
