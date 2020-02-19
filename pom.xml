@@ -6,10 +6,13 @@
 	<groupId>org.vkrajput.englishmonkey</groupId>
 	<artifactId>english-monkey-parent</artifactId>
 	<version>1.0.0</version>
-	<packaging>pom</packaging>
-	<name>english-monkey-pparent</name>
-	<description>tenglish-monkey--parent-module</description>
-	<url>https://github.com/vijaykrajpoot/learning</url>
+    <modules>
+        <module>english-monkey-loader</module>
+    </modules>
+    <packaging>pom</packaging>
+	<name>english-monkey-parent</name>
+	<description>english-monkey--parent-module</description>
+	<url>https://github.com/vijaykrajpoot/englishmonkey</url>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
