@@ -10,6 +10,6 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>english-monkey</artifactId>
 
-  <name>EnglishMonkey::Application</name>
+  <name>EnglishMonkey :: Application</name>
 
 </project>

@@ -8,7 +8,7 @@
 	<version>1.0.0</version>
     <modules>
         <module>english-monkey-loader</module>
-		<module>english-monkey</module>
+		<module>english-monkey-app</module>
 		<module>english-monkey-rest</module>
 		<module>english-monkey-persistence</module>
 		<module>english-monkey-bom</module>
