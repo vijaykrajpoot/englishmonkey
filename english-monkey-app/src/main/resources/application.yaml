@@ -1,0 +1,29 @@
+
+
+spring:
+    profiles:
+        active: prod
+    banner:
+        location: classpath:banner.txt
+
+#    main:
+#        allow-bean-definition-overriding: true
+logging:
+        pattern:
+            console: "%d %-5level %logger : %msg%n"
+        level:
+            org.springframework: ERROR
+            com.sony.sie.loyalty.: DEBUG
+            org.springframework.boot.autoconfigure: INFO
+            org.springframework.orm.jpa: DEBUG
+            org.springframework.transaction: DEBUG
+            org.springframework.web: DEBUG
+            org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+        file:
+            name: /tmp/loyalty.log
+
+rules:
+    drools:
+        files:
+            location: loyalty_rewards_rules.drl

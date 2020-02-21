@@ -1,0 +1,33 @@
+spring:
+    profiles:
+        active: dev
+    datasource:
+        url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false
+        driver-class-name: org.h2.Driver
+        hikari:
+            connectionTimeout: 30000
+            idleTimeout: 600000
+            maxLifetime: 1800000
+            password: password
+            username: root
+
+hibernate:
+    hbm2ddl:
+        auto: create-drop
+
+    # enable H2 web console and set url for web console
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+            settings:
+                trace: false
+                web-allow-others: false
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+
+
+rules:
+    drools:
+        files:
+            location: /Users/vkumar1/Playstation/loyalty_rewards_rules.drl
