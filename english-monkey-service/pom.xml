@@ -9,14 +9,29 @@
         <version>1.0.0</version>
     </parent>
     <groupId>org.vkrajput.englishmonkey</groupId>
-    <artifactId>english-monkey-rest</artifactId>
-    <name>EnglishMonkey :: REST</name>
+    <artifactId>english-monkey-service</artifactId>
+    <name>EnglishMonkey :: RESTService</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-core</artifactId>
+            <version>1.1.44</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.1.44</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+            <version>4.8.64</version>
         </dependency>
     </dependencies>
 </project>

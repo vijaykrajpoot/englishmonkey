@@ -26,8 +26,3 @@ hibernate:
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
 
-
-rules:
-    drools:
-        files:
-            location: /Users/vkumar1/Playstation/loyalty_rewards_rules.drl

@@ -1,5 +1,5 @@
 server:
-    port : 80
+    port : 8080
 
 spring:
     datasource:
@@ -19,13 +19,3 @@ spring:
                 dialect: org.hibernate.dialect.MySQL5InnoDBDialect
                 format_sql: true
         show-sql: true
-
-
-rules:
-    drools:
-        files:
-            location: /Users/vkumar1/Playstation/loyalty_rewards_rules.drl
-loyalty:
-    points:
-        awards:
-            newloyalist : true
