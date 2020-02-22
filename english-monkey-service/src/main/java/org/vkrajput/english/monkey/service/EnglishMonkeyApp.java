@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.vkrajput.english.monkey.loader.config.EnglishMonkeyWordLoaderConfig;
 import org.vkrajput.english.monkey.service.config.EnglishMonkeyServiceConfig;
 
 /**
@@ -11,7 +12,7 @@ import org.vkrajput.english.monkey.service.config.EnglishMonkeyServiceConfig;
  */
 
 @SpringBootApplication
-@Import({EnglishMonkeyServiceConfig.class})
+@Import({EnglishMonkeyServiceConfig.class, EnglishMonkeyWordLoaderConfig.class})
 public class EnglishMonkeyApp {
     public static void main(String[] args) {
         SpringApplication.run(EnglishMonkeyApp.class,args);

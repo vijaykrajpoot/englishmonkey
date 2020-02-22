@@ -33,5 +33,10 @@
             <artifactId>classgraph</artifactId>
             <version>4.8.64</version>
         </dependency>
+        <dependency>
+            <groupId>org.vkrajput.englishmonkey</groupId>
+            <artifactId>english-monkey-loader</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 </project>
