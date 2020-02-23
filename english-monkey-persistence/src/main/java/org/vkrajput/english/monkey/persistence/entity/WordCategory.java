@@ -1,4 +1,4 @@
-package org.vkrajput.english.monkey.entity;
+package org.vkrajput.english.monkey.persistence.entity;
 
 public enum WordCategory {
 

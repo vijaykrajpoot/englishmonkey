@@ -1,4 +1,4 @@
-package org.vkrajput.english.monkey.service;
+package org.vkrajput.english.monkey;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

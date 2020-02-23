@@ -2,7 +2,7 @@
 # Misc file
 */target/**
 *.txt
-
+target/
 
 # OS generated files #
 ######################
