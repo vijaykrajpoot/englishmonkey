@@ -18,12 +18,12 @@ public class EnglishMonkeyRestController {
 
 
     @GetMapping("/word/{length}")
-    public List<String> getWords( @PathVariable int length) {
+    public List<String> getWordsOfLength( @PathVariable int length) {
         return englishMonkeyService.getAnyWordsByLength(length);
     }
 
     @GetMapping("category/{category}/word/{length}")
-    public List<String> getWords( @PathVariable int length, @PathVariable String category) {
+    public List<String> getWordsByLengthAndCategory( @PathVariable int length, @PathVariable String category) {
         return englishMonkeyService.getWordsByCategoryAndLength( category, length);
     }
 

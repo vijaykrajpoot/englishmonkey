@@ -19,6 +19,8 @@ public class EnglishMonkeyService {
     List<String> word = Arrays.asList("HAT", "BAT", "CAT", "MAT", "RAT", "FAT", "RED", "BLUE");
 
     public List<String> getAnyWordsByLength(int wordLength) {
+
+        englishMonkeyDataProvider.findWords();
         return word
                 .stream()
                 .filter(w -> (w.length() == wordLength))

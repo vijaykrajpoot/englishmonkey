@@ -10,4 +10,6 @@ public interface EnglishMonkeyDataProvider {
 
     List<Word> findWords();
 
+    List<Word> findWords(int length);
+
 }

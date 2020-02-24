@@ -21,13 +21,29 @@ public class EnglishMonkeyDataProviderImpl implements EnglishMonkeyDataProvider 
     public List<Word> findWords() {
 
         List<org.vkrajput.english.monkey.persistence.entity.Word> wordsEntity = wordsRepository.findByTagCountAndSenseIndex(2, 2);
+        // Transform entity to domain object
         return wordsEntity.stream().map(new Function<org.vkrajput.english.monkey.persistence.entity.Word, Word>() {
             @Override
             public Word apply(org.vkrajput.english.monkey.persistence.entity.Word wordEntity) {
-                return Word.builder().word(wordEntity.getWord()).length(wordEntity.getWord().length()).build();
+                return Word.builder()
+                        .word(wordEntity.getWord())
+                        .length(wordEntity.getWord().length()
+                        ).build();
             }
         }).collect(Collectors.toList());
+    }
+
+
+    @Override
+    public List<Word> findWords(int length) {
+
+    List<org.vkrajput.english.monkey.persistence.entity.Word> wordsEntity = wordsRepository.findByTagCountAndSenseIndex(2, 2);
+
+    return EnglishMonkeyDataTransformation.transformListOfWordEntityToDomainList
 
 
     }
+
+
+
 }
