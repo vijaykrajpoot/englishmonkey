@@ -2,8 +2,8 @@ package org.vkrajput.english.monkey.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.vkrajput.english.monkey.loader.service.WordsLoaderService;
-
+import org.vkrajput.english.monkey.service.data.EnglishMonkeyDataProvider;
+import org.vkrajput.english.monkey.service.domain.Word;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,9 +13,7 @@ import java.util.stream.Collectors;
 public class EnglishMonkeyService {
 
     @Autowired
-    private WordsLoaderService wordsLoaderService;
-
-    @Autowired
+    private EnglishMonkeyDataProvider englishMonkeyDataProvider;
 
 
     List<String> word = Arrays.asList("HAT", "BAT", "CAT", "MAT", "RAT", "FAT", "RED", "BLUE");
@@ -27,12 +25,16 @@ public class EnglishMonkeyService {
                 .sorted().collect(Collectors.toList());
     }
 
-
+    /**
+     * Return list of words
+     *
+     * @param category
+     * @param wordLength
+     * @return words
+     */
     public List<String> getWordsByCategoryAndLength(String category, int wordLength) {
-        return word
-                .stream()
-                .filter(w -> (w.length() == wordLength))
-                .sorted().collect(Collectors.toList());
+        List<Word> words = englishMonkeyDataProvider.findWords();
+        return words.stream().map(w -> w.getWord()).collect(Collectors.toList());
     }
 
 

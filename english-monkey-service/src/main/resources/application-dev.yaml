@@ -1,19 +1,24 @@
+server:
+    port : 8080
+
 spring:
-    profiles:
-        active: dev
     datasource:
-        url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false
-        driver-class-name: org.h2.Driver
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
         hikari:
             connectionTimeout: 30000
             idleTimeout: 600000
             maxLifetime: 1800000
             password: password
             username: root
-
-hibernate:
-    hbm2ddl:
-        auto: create-drop
+        url: jdbc:mysql://localhost:3306/dictionary
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5Dialect
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                format_sql: true
+        show-sql: true
 
     # enable H2 web console and set url for web console
     h2:

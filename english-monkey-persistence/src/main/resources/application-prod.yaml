@@ -8,7 +8,7 @@ spring:
             maxLifetime: 1800000
             password: password
             username: root
-        url: jdbc:mysql://localhost:3306/loyalty
+        url: jdbc:mysql://localhost:3306/dictionary
     jpa:
         database-platform: org.hibernate.dialect.MySQL5Dialect
         properties:
