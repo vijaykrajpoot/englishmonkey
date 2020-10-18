@@ -64,7 +64,7 @@
         <org.assertj.version>3.13.2</org.assertj.version>
         <org.eclipse.jetty.version>9.4.19.v20190610</org.eclipse.jetty.version>
         <org.hibernate.hibernate-core.version>5.4.4.Final</org.hibernate.hibernate-core.version>
-        <org.hibernate.hibernate-validator.version>5.4.1.Final</org.hibernate.hibernate-validator.version>
+        <org.hibernate.hibernate-validator.version>5.4.2.Final</org.hibernate.hibernate-validator.version>
         <org.immutables.value.version>2.5.6</org.immutables.value.version>
         <org.junit.jupiter.version>5.3.1</org.junit.jupiter.version>
         <org.liquibase.version>3.7.0</org.liquibase.version>
