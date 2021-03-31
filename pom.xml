@@ -52,7 +52,7 @@
         <ch.qos.logback.version>1.2.2</ch.qos.logback.version>
         <commons-codec.version>1.10</commons-codec.version>
         <com.fasterxml.jackson.version>2.9.8</com.fasterxml.jackson.version>
-        <com.google.guava.version>28.0-jre</com.google.guava.version>
+        <com.google.guava.version>29.0-jre</com.google.guava.version>
         <com.h2database.version>1.4.199</com.h2database.version>
         <org.hamcrest.version>1.3</org.hamcrest.version>
         <com.querydsl.version>4.2.1</com.querydsl.version>
