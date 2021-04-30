@@ -71,7 +71,7 @@
         <org.mockito.version>3.0.0</org.mockito.version>
         <org.postgresql.postgresql.version>42.2.6</org.postgresql.postgresql.version>
         <org.slf4j.version>1.7.26</org.slf4j.version>
-        <org.springframework.version>5.2.3.RELEASE</org.springframework.version>
+        <org.springframework.version>5.2.9.RELEASE</org.springframework.version>
         <org.springframework.data.version>Lovelace-SR10</org.springframework.data.version>
         <org.testng.version>6.13.1</org.testng.version>
     </properties>
